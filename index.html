@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/2e015a4931.js" crossorigin="anonymous"></script>
+
+    
+<body>
+
+<!--NAVBAR-->    
+  <nav class="navbar">
+    <div class="width">
+        <div class="logo"><a href="#">Portfo<span>lio.</span></a> </div>
+        <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
+ 
+<!--HOME SECTION-->
+  <section class="home" id="home">
+    <div class="width">
+        <div class="home-content">
+            <div class="text1">Hello, my name is  </div>
+            <div class="text2">Devanshi Sheth  </div>
+            <div class="text3">And I'm a <span>Developer</span></div>
+        </div>
+    </div>
+  </section>
+  
+  <script src="/script.js"></script>
+
+<!--ABOUT SECTION-->
+<section class="about" id="about">
+  <div class="width">
+    <h2 class="title">About Me</h2>
+      <div class="about-content">
+        <div class=" column left">
+          <img src="/WhatsApp Image 2022-08-25 at 11.11.18 PM.jpeg" alt="">
+        </div>
+        <div class="column right">
+            <div class="text4">I'm Devanshi and I'm a <span>Developer</span></div>
+            <p>I'm currently pursuing Master's in Computer Science with majors in Big Data Management and Software Engineering.</p> 
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li><span>University of Texas at Arlington</span><br>Masters in Computer Science   GPA-3.5/4<br>August 2021-May 2023</li>
+                <li><span>Gujarat Technological University</span><br>Bachelors in Computer Engineering   GPA-9.03/10<br>August 2017-May 2021</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Periware Infotech Pvt Ltd</span><br>Software Developer Intern<br>Apr 2020-Sept 2020</li>
+                <li><span>Sevina Technologies</span><br>Software Developer Intern<br>Feb 2020-Mar 2020</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+
+<!--SKILLS SECTION-->
+<section class="skills" id="skills">
+  <div class="width">
+    <h2 class="title">My skills</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text5">My skills and experiences.</div>
+          <p>I am a Full Stack developer with most expertise in the skills listed besides and lot more technologies. Looking for Full-Time Job Opportunities in May 2023.</p>
+          <a href="/DEVANSHI SHETH.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="column right">
+            <div class="bars">
+              <div class="info">
+                 <span>HTML</span>
+                 <span>90%</span>
+              </div>
+                <div class="line html"></div>
+            </div>
+            <div class="bars">
+             <div class="info">
+               <span>CSS</span>
+               <span>90%</span>
+              </div>
+                <div class="line css"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>Javascript</span>
+                <span>70%</span>
+              </div>
+                <div class="line js"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>React</span>
+                <span>70%</span>
+              </div>
+                <div class="line react"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>Java</span>
+                <span>60%</span>
+              </div>
+                <div class="line java"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>MySQL</span>
+                <span>90%</span>
+              </div>
+                <div class="line sql"></div>
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!--CONTACT SECTION-->
+<section class="contact" id="contact">
+  <div class="width">
+    <div class="row">
+       <div class="column left">
+          <h2 class="title">Contact me</h2>
+          <p><i class="fa-solid fa-paper-plane"></i>dsheth0803@gmail.com</p>
+          <p><i class="fa-sharp fa-solid fa-phone"></i>478-308-4104</p>
+          <p><i class="fa-solid fa-location-dot"></i>Texas,USA</p>
+          <div class="social-icons">
+             <!-- <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a> -->
+              <a href="https://www.instagram.com/devanshi_0803/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/devanshi8/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+       </div>
+       <div class="column right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="mssg"></span>
+       </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxRF31Q-8pbDAlGKtg6bt1pLD-rhAiVpbWf7TsVZrJiiQB4XdcSPpouOPVDhTOtYFU/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const mssg = document.getElementById("mssg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        mssg.innerHTML="Message sent successfully!"
+        setTimeout(function(){
+          mssg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
