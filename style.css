@@ -77,7 +77,7 @@
 
 .home{
   display: flex;
-  background: url("/image.png") no-repeat right;
+  background: url("./image.png") no-repeat right;
   background-color: black;
   height: 100vh;
   color: white;
