@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
@@ -12,26 +11,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/2e015a4931.js" crossorigin="anonymous"></script>
-    <style>
-        /* Default styles */
-        body {
-          font-size: 16px;
-        }
-
-        /* Media query for screens smaller than 768px */
-        @media (max-width: 768px) {
-          body {
-            font-size: 14px;
-          }
-        }
-
-        /* Media query for screens smaller than 576px */
-        @media (max-width: 576px) {
-          body {
-            font-size: 12px;
-          }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Default styles */
+    body {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+      
+      /* Example: hide sidebar on smaller screens */
+      .sidebar {
+        display: none;
+      }
+      
+      /* Example: adjust layout of main content on smaller screens */
+      .main-content {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    
+    /* Media query for screens smaller than 576px */
+    @media (max-width: 576px) {
+      body {
+        font-size: 12px;
+        line-height: 1.3;
+      }
+      
+      /* Example: adjust font size and layout of navigation menu */
+      .nav-menu {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 
     
